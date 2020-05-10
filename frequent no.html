@@ -5,18 +5,18 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <center class="Input>
+  <center class="Input">
       <h2>Find the most frequent item of an array</h2>
 
       <span>Input Values</span>
       <input type="text" id="inp" value="1,2,3,1,1" placeholder= " max 5, separated by comma">
 
-      <input type="button" value="FIND"> 
+      <input type="button" value="FIND" onclick="frequentno()"> 
   </center>
 
 
 <script>
-
+  function frequentno(){
         var arr1 = [1,2,3,1,1];
         var mf = 1;
         var m = 0;
@@ -35,7 +35,7 @@
         }
 
         alert(rep + " ( " + mf + " times ) ");
-   
+  }
  
 </script>
 </body>
