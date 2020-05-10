@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truncate a string</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Write a JavaScript function to truncate a string if it is longer than the specified number of characters. -->
+    <div class="input">
+        <h2>Truncate a string</h2>
+        <h3 id="content">Fake it till you make it mindset</h3>
+        <br> <br>
+    </div>
+
+    <script>
+        // var view = document.getElementById("split");
+        function truncate(str, words) {
+            return str.split(" ").splice(0,words).join(" ");
+        }
+        alert(truncate('Fake it till you make it mindset ', 6));
+    </script>
+
+
+
+
+</body>
+</html>

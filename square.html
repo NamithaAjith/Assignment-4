@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center class="input">
+        <!-- Write a JavaScript program to find the sum of squares of the elements of an array. -->
+        <h2>Find the sum of squares of the elements of an array</h2>
+        <hr color="Black"> 
+        <label id="content">Input Value</label>
+        <input type="text" id="in"> 
+        <br>
+        <input type="button"  id="submit" value="Check" onClick="sumsq()"> 
+        <br><br>
+        <p id="output"></p>
+    </center>
+
+
+    <script>
+        function sumsq(array) {
+            var sum = 0, 
+            i = array.length;
+            while (i--) 
+            sum += Math.pow(array[i], 2);
+            // return sum;
+            }
+            
+           alert(sum)
+    </script>
+
+</body>
+</html>
+<!-- unction sumsq(ar){
+
+    var sum = []; 
+    num = parseInt(input) ;
+    for(var i = 0; i <ar.length; i++){
+    sum += Math.pow(ar[i], 2);
+}
+
+return sum;
+} -->
+

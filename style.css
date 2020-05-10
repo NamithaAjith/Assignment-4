@@ -1,0 +1,36 @@
+*{
+    padding : 0px;
+    margin: 0px;
+}
+.Qstns{
+    background-color: #fafad2;
+    background-size: cover; 
+}
+.Qstns h2{
+    color:red;
+    font: bold;
+    margin-left: 2%;
+    
+}
+.Qstns a{
+    color: royalblue;
+    text-decoration: none;
+    text-align: justify;
+    margin-left: 2%;
+    padding: 1.5%;
+}
+.input{
+    background-color: linen;
+    background-size: cover;
+}
+.input h2{
+    color: orangered;
+    padding: 2%;
+}
+#submit{
+    margin-left: 5%;
+    padding: 0.7%;
+}
+#content{
+    padding-left: 4%;
+}

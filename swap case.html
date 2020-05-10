@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Swap the case of each character of a string</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center class="input">
+        <h2>Swap the case of each character of a string</h2>
+        <span>Input Values</span>
+            <input type="text" id="in">
+
+            <input type="submit" value="READ" onClick="swapcase()"> 
+
+            <div id="result">
+                <!--Write your codes from here-->
+                <h3 id="output"></h3>
+            </div>
+    </center>
+
+
+<script>
+
+    var str = document.getElementById("in").value;
+    var out= document.querySelector("#output");  
+    var UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    var LOWER = 'abcdefghijklmnopqrstuvwxyz';
+    var result = [];
+
+    function swapcase(){
+    
+        for(var x=0; x<str.length; x++)
+        {
+            if(UPPER.indexOf(str[x]) !== -1)
+            {
+            result.push(str[x].toLowerCase());
+            }
+            else if(LOWER.indexOf(str[x]) !== -1)
+            {
+            result.push(str[x].toUpperCase());
+            }
+            else 
+            {
+            result.push(str[x]);
+            }
+        }
+        // out.innerHTML.value =  + result.join('') +  "is the output ";
+       alert(result.join(''));
+
+    }
+    
+
+</script>
+</body>
+</html>
+
+</html>

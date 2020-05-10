@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Write a JavaScript program using for…in 
+    to read the objects from an array entered by an user and to arrange it in alphabetical order. -->
+    <div class="input">
+    <h2>Type text and to arrange it in alphabetical order</h2>
+    <input type="text" id="data">
+    <button id="submit" onclick="myFunction()">Try it</button>
+
+    <p id="type"></p>
+    </div>
+
+
+<script>
+    function myFunction() {
+    var data = document.getElementById("data");
+    var text= [];
+  
+    document.getElementById("type").innerHTML = text;
+
+
+    text.sort();
+    for (text  in range data) {
+
+    document.getElementById("type").innerHTML = text;
+    }
+</script>   
+</body>
+</html>

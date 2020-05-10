@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center class="input"> 
+        <h2>Check number is Prime or not</h2> 
+        <br> 
+        <hr color="Black"> 
+            <br>    
+            Enter the number 
+            <input type="text" id="n" value=""> 
+              
+            <br><br> 
+              
+            <input type="button" id="btn" value="CHECK" onClick="prime()"> 
+            <br> <br>
+
+    </center> 
+
+  
+    <script>
+
+        function prime() { 
+             
+            n = document.getElementById("n").value; 
+   
+            num = parseInt(n) 
+
+            for(var i = 2; i >=num; i++) 
+         
+                if (num == 2) { 
+                    alert(num + " is prime");  
+                    break; 
+                } 
+                
+                if (num % i == 0) 
+                    alert(num + " is not prime"); 
+
+                else
+                    alert(num + " is prime"); 
+        } 
+    </script>
+</body>
+</html>

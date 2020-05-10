@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print the letters of the word</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Write a JavaScript program to print the letters of the word “Javascript” as below in each line using for…of. -->
+    <div class="input">
+    <h2>Print the letters of the word “Javascript”</h2>
+    <input type="button" id="submit" value="PRINT" onClick="printletter()">
+    <br><br>
+    </div>
+    
+    <script>
+
+        function printletter(){
+            // var p= document.getElementById("print").value;
+            const iterable = new Map([['a', 'j'], ['b', 'ja'], ['c', 'jav'],['d', 'java'],['e', 'javas'],['f', 'javasc'],['g', 'javascr'],['h', 'javascri'],['j', 'javascrip'],['k', 'javascript']]);
+
+            for (const [key, value] of iterable) {
+            alert(value);
+              
+            }
+        }
+        
+    </script>
+
+</body>
+</html>
